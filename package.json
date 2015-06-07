@@ -1,0 +1,27 @@
+{
+    "name": "cordova-plugin-pitch",
+    "version": "0.0.1",
+    "cordova": {
+        "id": "com.bandpad.cordova.audiofrequency",
+        "platforms": [
+             "android",
+             "ios",
+            "browser"
+        ]
+    },
+    "description": "Cordova P Plugin",
+    "license": "Apache 2.0",
+    "repository":{
+        "type": "git",
+        "url": "https://github.com/amitgur/cordova-plugin-pitch.git"
+    },
+    "bugs": "https://issues.apache.org/jira/browse/CB/component/12320648",
+    "keywords": [
+        "cordova",
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-browser"
+    ],
+    "engines": [],
+    "author": "Apache Software Foundation"
+}
