@@ -219,7 +219,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 
 
 #pragma -mark signal processing data
-
+// amit - this is the main process function
 - (void)processSample:(NSMutableData *)data rate:(int)sampleRate
 {
     Float32 *samples = [data mutableBytes];
