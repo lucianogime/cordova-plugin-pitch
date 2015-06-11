@@ -1,0 +1,10 @@
+node_modules/
+.idea/
+temp/
+/log/**/*
+.cordova
+merges
+platforms
+plugins
+hooks
+

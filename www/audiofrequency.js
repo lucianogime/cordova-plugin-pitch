@@ -6,6 +6,7 @@ function handlers () {
 };
 
 var AudioFrequency = function () {
+	console.log("Init Plug");
     // Create new event handlers on the window (returns a channel instance)
     this.channels = {
         audiofrequency: cordova.addWindowEventHandler("audiofrequency")
@@ -20,6 +21,7 @@ var AudioFrequency = function () {
  * Keep track of how many handlers we have so we can start and stop the native frequency listener appropriately.
  */
 AudioFrequency.onHasSubscribersChange = function () {
+	console.log("Plug start");
   // If we just registered the first handler, make sure native listener is started.
   if (this.numHandlers === 1 && handlers() === 1) {
       exec(audiofrequency._frequency, audiofrequency._error, "AudioFrequency", "start", []);
