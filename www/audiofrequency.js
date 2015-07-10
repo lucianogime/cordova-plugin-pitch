@@ -37,6 +37,7 @@ AudioFrequency.onHasSubscribersChange = function () {
  */
 AudioFrequency.prototype._frequency = function (frequencyData) {
     // Fire audiofrequency event
+	console.log("fire-event");
     cordova.fireWindowEvent("audiofrequency", frequencyData);
 };
 
@@ -44,6 +45,7 @@ AudioFrequency.prototype._frequency = function (frequencyData) {
  * Error callback for AudioFrequency start
  */
 AudioFrequency.prototype._error = function (e) {
+	console.log("error-event");
     console.log("Error initializing AudioFrequency: " + e);
 };
 
