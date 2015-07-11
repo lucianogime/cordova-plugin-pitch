@@ -24,8 +24,8 @@
         <source-file src="src/ios/ToneReceiver.h" />
         <source-file src="src/ios/ToneReceiver.m" />
 
-        <framework src="Accelerate.framework" weak="true" />
-        <framework src="AVFoundation.framework" weak="true" />
+        <!--<framework src="Accelerate.framework" weak="true" />
+        <framework src="AVFoundation.framework" weak="true" />-->
 
     </platform>
 
