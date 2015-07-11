@@ -22,6 +22,8 @@
 {
     NSNotificationCenter* listener = [NSNotificationCenter defaultCenter];
 
+	NSLog(@"Amit Init");
+	
     [listener addObserver:self
                  selector:@selector(didEnterBackground)
                      name:UIApplicationDidEnterBackgroundNotification
@@ -39,6 +41,8 @@
 
     UInt32 spectrumResolution = 16384; //16384; //32768; 65536; 131072;
 
+	NSLog(@"Amit Start");
+	
     self.toneReceiver = [[ToneReceiver alloc] initWithSpectrumResolution:spectrumResolution];
     self.toneReceiver.delegate = self;
 
