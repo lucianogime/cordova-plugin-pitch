@@ -13,7 +13,8 @@
     <!-- ios -->
     <platform name="ios">
 
-        <config-file parent="/*" target="config.xml">
+        <!--<config-file parent="/*" target="config.xml">-->
+        <config-file target="config.xml" parent="/widget">
             <feature name="AudioFrequency">
                 <param name="ios-package" value="CDVAudioFrequency" />
             </feature>
@@ -49,13 +50,6 @@
         <source-file src="src/android/JTransforms-3.0.jar" target-dir="libs"/>
         <source-file src="src/android/JLargeArrays-1.2.jar" target-dir="libs"/>
 
-    </platform>
-
-    <!-- browser -->
-    <platform name="browser">
-        <js-module src="src/browser/AudioFrequencyProxy.js" name="AudioFrequencyProxy">
-            <runs/>
-        </js-module>
     </platform>
 
 </plugin>
